@@ -63,7 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
  
                       ClipOval(
                         clipBehavior: Clip.hardEdge,
-                        child: Image.network('https://ae01.alicdn.com/kf/H756e861051b7417db7a5c6d37847aeben/Barber-Scissors-C1005-5-5-6-Engrave-Logo-Professional-Hairdressing-Scissors-Thinning-Shears-Hair-Cutting-Scissor.jpg_Q90.jpg_.webp',fit: BoxFit.fill,),
+                       child:Image.asset('assets/splash.png')
+                        // child: Image.network('https://ae01.alicdn.com/kf/H756e861051b7417db7a5c6d37847aeben/Barber-Scissors-C1005-5-5-6-Engrave-Logo-Professional-Hairdressing-Scissors-Thinning-Shears-Hair-Cutting-Scissor.jpg_Q90.jpg_.webp',fit: BoxFit.fill,),
                    ),
                       SizedBox(
                         height: 10,

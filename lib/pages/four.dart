@@ -1,18 +1,17 @@
 import 'dart:html';
 
-import 'package:ecommerce/pages/four.dart';
 import 'package:ecommerce/pages/second.dart';
 import 'package:ecommerce/pages/third.dart';
 import 'package:flutter/material.dart';
 
-class First extends StatefulWidget {
-  const First({Key? key}) : super(key: key);
+class four extends StatefulWidget {
+  const four({Key? key}) : super(key: key);
 
   @override
-  State<First> createState() => _FirstState();
+  State<four> createState() => _FirstState();
 }
 
-class _FirstState extends State<First> {
+class _FirstState extends State<four> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -26,7 +25,7 @@ class _FirstState extends State<First> {
       Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/first.jpg"),
+                image: AssetImage("assets/four.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -84,8 +83,7 @@ class _FirstState extends State<First> {
         ],
        ),
      Second(),
-     third(),
-     four()
+     third()
       ]
       
      )

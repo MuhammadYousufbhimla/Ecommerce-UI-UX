@@ -1,7 +1,3 @@
-
-
-import 'package:ecommerce/pages/second.dart';
-import 'package:ecommerce/pages/third.dart';
 import 'package:flutter/material.dart';
 
 class four extends StatefulWidget {
@@ -36,12 +32,13 @@ class _FirstState extends State<four> {
            child: Image.asset('assets/splash.png',width: MediaQuery.of(context).size.width*0.18,)
          ),
          Padding(
-          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.52,left: MediaQuery.of(context).size.width*0.12),
+          padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.20,left: MediaQuery.of(context).size.width*0.20),
            child: Row(
              children: [
-               Text("NO",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white,),),
-               Padding(padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.05)),           
-               Text("4",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white),),
+              Image.asset('assets/four.jpg')
+              //  Text("NO",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white,),),
+              //  Padding(padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.05)),           
+              //  Text("4",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white),),
      
              
              ],
@@ -50,10 +47,10 @@ class _FirstState extends State<four> {
            
      
          ),
-           Padding(
-                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.58,left: MediaQuery.of(context).size.width*0.10),
-             child: Text("Featured",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Color.fromARGB(255, 4, 2, 115))),
-           ),
+          //  Padding(
+          //         padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.58,left: MediaQuery.of(context).size.width*0.10),
+          //    child: Text("Featured",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Color.fromARGB(255, 4, 2, 115))),
+          //  ),
             Padding(
                   padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.65,left: MediaQuery.of(context).size.width*0.10),
              child: Text("Tailored",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white,letterSpacing: 4)),

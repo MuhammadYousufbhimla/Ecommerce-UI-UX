@@ -61,15 +61,16 @@ class _FirstState extends State<First> {
                    width: MediaQuery.of(context).size.width*0.85,
                    height: MediaQuery.of(context).size.height*0.10,
              decoration: BoxDecoration(
+              
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
-                
+                width: MediaQuery.of(context).size.width*0.01,
                 color: Colors.white
               
               )
               
              ),
-             child: Center(child: Text("Shop Now",style: TextStyle(fontSize: 40,fontWeight: FontWeight.w500,color: Colors.white),)),
+             child: Center(child: Text("Shop Now",style: TextStyle(fontSize: 40,fontWeight: FontWeight.w500,color: Colors.white,),)),
            ),
          )
       ],

@@ -82,8 +82,7 @@ class _FirstState extends State<four> {
            )
         ],
        ),
-     Second(),
-     third()
+    
       ]
       
      )

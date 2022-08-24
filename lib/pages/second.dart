@@ -18,7 +18,7 @@ class _FirstState extends State<Second> {
  Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/first.jpg"),
+              image: AssetImage("assets/four.jpg"),
               fit: BoxFit.cover,
             ),
           ),
@@ -34,7 +34,7 @@ class _FirstState extends State<Second> {
            children: [
              Text("NO",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white,),),
              Padding(padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.05)),           
-             Text("1",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white),),
+             Text("2",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white),),
 
            
            ],
@@ -53,7 +53,7 @@ class _FirstState extends State<Second> {
          ),
            Padding(
                 padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.74,left: MediaQuery.of(context).size.width*0.04),
-           child: Text("Jennifer Kingsley exploring the\nnew range of winter fashion wear.",style: TextStyle(fontSize: 21,fontWeight: FontWeight.bold,color: Colors.white,)),
+           child: Text("Jimmy Chuka exploring new spring\nsweater collections.",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white,)),
          ),
          Padding(
             padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.85,left: MediaQuery.of(context).size.width*0.10),

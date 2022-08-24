@@ -18,7 +18,7 @@ class _FirstState extends State<First> {
  Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/second.jpg"),
+              image: AssetImage("assets/first.jpg"),
               fit: BoxFit.cover,
             ),
           ),

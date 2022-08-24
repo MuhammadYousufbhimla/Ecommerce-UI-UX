@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   //EasyLoading.showSuccess('Great Success!');
   //EasyLoading.dismiss();
     Timer(
-        Duration(seconds: 20),
+        Duration(seconds: 5),
         () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (BuildContext context) => First())));
   }

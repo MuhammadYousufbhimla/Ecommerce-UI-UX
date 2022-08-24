@@ -25,7 +25,7 @@ class _FirstState extends State<four> {
       Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/four.jpg"),
+                image: AssetImage("assets/thread.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -41,7 +41,7 @@ class _FirstState extends State<four> {
              children: [
                Text("NO",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white,),),
                Padding(padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.05)),           
-               Text("1",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white),),
+               Text("4",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white),),
      
              
              ],

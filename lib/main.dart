@@ -34,10 +34,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
-  EasyLoading.showSuccess('Great Success!');
+  //EasyLoading.showSuccess('Great Success!');
   //EasyLoading.dismiss();
     Timer(
-        Duration(seconds: 5),
+        Duration(seconds: 20),
         () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (BuildContext context) => First())));
   }
@@ -46,10 +46,18 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+      
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Color.fromARGB(255, 14, 116, 200)),
+          
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                Colors.blue,
+                 Color.fromARGB(255, 8, 90, 157),
+              ]),
+              // color: Color.fromRGBO(10, 83, 144, 1)
+              ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -63,7 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
  
                       ClipOval(
                         clipBehavior: Clip.hardEdge,
-                       child:Image.asset('assets/splash.png')
+                       child:Image.asset('assets/splash.png',width: MediaQuery.of(context).size.width*0.30,
+                       height: MediaQuery.of(context).size.height*0.20,
+                       )
                         // child: Image.network('https://ae01.alicdn.com/kf/H756e861051b7417db7a5c6d37847aeben/Barber-Scissors-C1005-5-5-6-Engrave-Logo-Professional-Hairdressing-Scissors-Thinning-Shears-Hair-Cutting-Scissor.jpg_Q90.jpg_.webp',fit: BoxFit.fill,),
                    ),
                       SizedBox(

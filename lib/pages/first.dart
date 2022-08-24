@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:ecommerce/pages/second.dart';
+import 'package:ecommerce/pages/third.dart';
 import 'package:flutter/material.dart';
 
 class First extends StatefulWidget {
@@ -11,21 +12,14 @@ class First extends StatefulWidget {
 }
 
 class _FirstState extends State<First> {
-PageController _pagerController = PageController(keepPage: true);
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-     body: InkWell(
-      onTap: () {
- PageView(
-   physics: NeverScrollableScrollPhysics(),
-      controller: _pagerController,
+     body: PageView(
       children: [
-      Second()
-      ]
- );
-      },
-       child: Stack(
+      
+    
+       Stack(
         children: [
       Container(
             decoration: BoxDecoration(
@@ -87,6 +81,10 @@ PageController _pagerController = PageController(keepPage: true);
            )
         ],
        ),
+     Second(),
+     third()
+      ]
+      
      )
     );
   }

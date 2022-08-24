@@ -2,14 +2,14 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 
-class First extends StatefulWidget {
-  const First({Key? key}) : super(key: key);
+class Second extends StatefulWidget {
+  const Second({Key? key}) : super(key: key);
 
   @override
-  State<First> createState() => _FirstState();
+  State<Second> createState() => _FirstState();
 }
 
-class _FirstState extends State<First> {
+class _FirstState extends State<Second> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -18,7 +18,7 @@ class _FirstState extends State<First> {
  Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/second.jpg"),
+              image: AssetImage("assets/first.jpg"),
               fit: BoxFit.cover,
             ),
           ),

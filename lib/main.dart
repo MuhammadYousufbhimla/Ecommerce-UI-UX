@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:ecommerce/pages/first.dart';
+import 'package:ecommerce/pages/second.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
@@ -39,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Timer(
         Duration(seconds: 5),
         () => Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (BuildContext context) => First())));
+            MaterialPageRoute(builder: (BuildContext context) => Second())));
   }
 
   @override

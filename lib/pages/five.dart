@@ -71,6 +71,7 @@ class _FiveState extends State<Five>   with SingleTickerProviderStateMixin{
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500)),
                       ),
+                      
                 ],
                )
                
@@ -108,28 +109,53 @@ class _FiveState extends State<Five>   with SingleTickerProviderStateMixin{
           ),
         
         ),
-        Divider(
+          Padding(
+                         padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height*0.83),
+                         child: Divider(
+                         
           color: Colors.grey,
-          thickness: 2,
+          thickness: 1,
         ),
+                       ),
+       
         Positioned(
           top:MediaQuery.of(context).size.height*0.85,
-          left: MediaQuery.of(context).size.width*0.06,
-          child: Container(
+          left: MediaQuery.of(context).size.width*0.01,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+               Text("Total",style: TextStyle(color: Colors.grey),),
+
+                Padding(
+                  padding: const EdgeInsets.only(left:5.0),
+                  child: Text("Rs .25.99",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 39, 0, 231),
+                          fontSize: 15,
+                          fontWeight: FontWeight.w500)),
+                ),
+
+
+              Padding(
+                padding: const EdgeInsets.only(left:8.0),
+                child: Container(
    
-                       width: MediaQuery.of(context).size.width*0.85,
-                       height: MediaQuery.of(context).size.height*0.07,
-                 decoration: BoxDecoration(        
-               color: Color.fromARGB(255, 39, 0, 231),
-                  borderRadius: BorderRadius.circular(15),
-                  border: Border.all(
-                    width: MediaQuery.of(context).size.width*0.01,
-              color:Colors.lightBlue
-                  )
-                  
-                 ),
-                 child: Center(child: Text("Shop Now",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500,color: Colors.white,),)),
-               ),
+                             width: MediaQuery.of(context).size.width*0.67,
+                             height: MediaQuery.of(context).size.height*0.07,
+                       decoration: BoxDecoration(        
+                     color: Color.fromARGB(255, 39, 0, 231),
+                        borderRadius: BorderRadius.circular(13),
+                    //     border: Border.all(
+                    //       width: MediaQuery.of(context).size.width*0.01,
+                    // color:Colors.lightBlue
+                    //     )
+                        
+                       ),
+                       child: Center(child: Text("Add to Bag",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white,),)),
+                     ),
+              ),
+            ],
+          ),
         ),
         ]
       ),
@@ -148,7 +174,9 @@ class _FiveState extends State<Five>   with SingleTickerProviderStateMixin{
          Padding(
            padding: const EdgeInsets.only(top:5.0),
            child: Text("AS SEEN IN REDBOOK! You'll be printed and ready in the Perfect In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  " ,style: TextStyle(fontSize: 15,letterSpacing: 2, color: Colors.blue),),
-         )
+         
+         ),
+        
         ],
       ),
     )

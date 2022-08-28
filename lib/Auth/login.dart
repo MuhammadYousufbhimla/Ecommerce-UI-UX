@@ -20,7 +20,7 @@ class _FirstState extends State<Login> {
         child: ClipOval(
             clipBehavior: Clip.hardEdge,
             child: Image.asset(
-              'assets/splash.png', color: Color.fromARGB(255, 19, 99, 165),
+              'assets/splash.png',  color: Color.fromARGB(255, 39, 0, 231),
               width: MediaQuery.of(context).size.width * 0.33,
              
             )),
@@ -35,7 +35,7 @@ class _FirstState extends State<Login> {
               fontSize: 20,
               letterSpacing: 4,
               fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 19, 99, 165)),
+              color: Color.fromARGB(255, 39, 0, 231),),
         ),
       ),
       // Main Container 

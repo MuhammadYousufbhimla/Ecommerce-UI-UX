@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:ecommerce/pages/first.dart';
-import 'package:ecommerce/pages/second.dart';
-import 'package:ecommerce/pages/third.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 

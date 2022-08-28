@@ -36,8 +36,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
-  //EasyLoading.showSuccess('Great Success!');
-  //EasyLoading.dismiss();
+
     Timer(
         Duration(seconds: 5),
         () => Navigator.of(context).pushReplacement(

@@ -246,12 +246,73 @@ class _FiveState extends State<Five> with SingleTickerProviderStateMixin {
             ),
             child: Center(child: Text("70",style: TextStyle(),)),
            ),
+         
             ],
           ),
         ),
-      )
+      ),
+        Container(
+            child: Padding(
+                padding:  EdgeInsets.only(left: 08, top: 08),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text("Color:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17), ),
+                  CircleAvatar1(context,Colors.brown),
+                     CircleAvatar1(context,Colors.green),
+                        CircleAvatar1(context,Colors.yellow),
+                           CircleAvatar1(context,Colors.purple),
+                ],
+              ),
+            ),
+           ),
+           Container(
+            child: Padding(
+            padding:  EdgeInsets.only(left: 08, top: 07),
+              child: Text("Do you want to use this material?",style: TextStyle( fontSize: 15, color: Colors.grey,fontWeight: FontWeight.bold),),
+            ),
+           ),
+           Container(
+            child: Row(
+              children: [
+            Padding(
+              padding: const EdgeInsets.only(left:8.0),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.25,
+                    height: MediaQuery.of(context).size.height * 0.06,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 39, 0, 231),
+                      borderRadius: BorderRadius.circular(08),
+                 ),
+                 child: Center(child: Text("Yes",style: TextStyle(color: Colors.white,fontSize: 15),)),
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.only(left:8.0),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.25,
+                    height: MediaQuery.of(context).size.height * 0.06,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 39, 0, 231),
+                      borderRadius: BorderRadius.circular(08),
+                 ),
+                 child: Center(child: Text("No",style: TextStyle(color: Colors.white,fontSize: 15),)),
+              ),
+            ),
+              ],
+            ),
+           )
       ]
     );
     
+  }
+  Widget CircleAvatar1(context,Color){
+    return Container(
+    child: CircleAvatar(
+      backgroundColor:Color,
+      radius: 20,
+    )
+    
+    );
   }
 }

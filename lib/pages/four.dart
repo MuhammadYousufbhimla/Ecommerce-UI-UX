@@ -37,7 +37,7 @@ class _FirstState extends State<four> {
           //    child: Text("Tailored",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white,letterSpacing: 4)),
           //  ),
            Padding(
-              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.70,left: MediaQuery.of(context).size.width*0.07),
+              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.73,left: MediaQuery.of(context).size.width*0.07),
              child: Container(
                      width: MediaQuery.of(context).size.width*0.90,
                      height: MediaQuery.of(context).size.height*0.08,
@@ -61,8 +61,8 @@ class _FirstState extends State<four> {
              ),
           
              Padding(
-                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.80,left: MediaQuery.of(context).size.width*0.07),
-             child: Text("By clicking this button you agree to our\nteam of services and privacy policy..",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.white,)),
+                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.83,left: MediaQuery.of(context).size.width*0.07),
+             child: Text("By clicking this button you agree to our\nteam of services and privacy policy..",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white,)),
            ),
           
         ],

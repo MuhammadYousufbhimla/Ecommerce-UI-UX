@@ -32,19 +32,15 @@ class _FirstState extends State<four> {
            child: Image.asset('assets/splash.png',width: MediaQuery.of(context).size.width*0.18,)
          ),
      
-            Padding(
-                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.65,left: MediaQuery.of(context).size.width*0.10),
-             child: Text("Tailored",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white,letterSpacing: 4)),
-           ),
-             Padding(
-                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.74,left: MediaQuery.of(context).size.width*0.04),
-             child: Text("Jennifer Kingsley exploring the\nnew range of winter fashion wear.",style: TextStyle(fontSize: 21,fontWeight: FontWeight.bold,color: Colors.white,)),
-           ),
+          //   Padding(
+          //         padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.65,left: MediaQuery.of(context).size.width*0.10),
+          //    child: Text("Tailored",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white,letterSpacing: 4)),
+          //  ),
            Padding(
-              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.85,left: MediaQuery.of(context).size.width*0.10),
+              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.70,left: MediaQuery.of(context).size.width*0.10),
              child: Container(
-                     width: MediaQuery.of(context).size.width*0.85,
-                     height: MediaQuery.of(context).size.height*0.10,
+                     width: MediaQuery.of(context).size.width*0.90,
+                     height: MediaQuery.of(context).size.height*0.08,
                decoration: BoxDecoration(
                 
                 borderRadius: BorderRadius.circular(10),
@@ -55,9 +51,20 @@ class _FirstState extends State<four> {
                 )
                 
                ),
-               child: Center(child: Text("Shop Now",style: TextStyle(fontSize: 40,fontWeight: FontWeight.w500,color: Colors.white,),)),
+             child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceAround,
+               children: [
+                  Image.asset('assets/insta.png',height: 40,color: Colors.white,),
+                 Text("Continue with instagram",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white,),),
+               ],
+             )),
              ),
-           )
+          
+             Padding(
+                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.80,left: MediaQuery.of(context).size.width*0.04),
+             child: Center(child: Text("By clicking this button you agree to our\nteam of services and privacy policy..",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white,))),
+           ),
+          
         ],
        ),
     

@@ -62,7 +62,7 @@ class _FirstState extends State<four> {
           
              Padding(
                   padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.83,left: MediaQuery.of(context).size.width*0.07),
-             child: Text("By clicking this button you agree to our\nteam of services and privacy policy..",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white,)),
+             child: Text("By clicking this button you agree to our\nteam of services and privacy policy..",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.white,)),
            ),
           
         ],

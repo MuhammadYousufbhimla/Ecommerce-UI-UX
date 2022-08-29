@@ -1,3 +1,4 @@
+import 'dart:html';
 
 import 'package:flutter/material.dart';
 
@@ -86,7 +87,7 @@ class _FiveState extends State<Five> with SingleTickerProviderStateMixin {
               ),
               Expanded(
                 child: TabBarView(
-                  children: [Info(), Text('Person')],
+                  children: [Info(), Mesurement()],
                   controller: _tabController,
                 ),
               ),
@@ -175,17 +176,82 @@ class _FiveState extends State<Five> with SingleTickerProviderStateMixin {
           ),
         ],
       ),
-    )
-    
-    );
-
-
+    ));
   }
-Widget Mesurement(){
 
-  return Container(
+  Widget Mesurement() {
+    return ListView(
+      children: [
 
+      
+       Container(
+          child: Padding(
+        padding: const EdgeInsets.only(left: 20.0, top: 05),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text(
+              "WAIST",
+              style: TextStyle(color: Color.fromARGB(255, 83, 82, 82),fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "LENGTH",
+              style: TextStyle(color: Color.fromARGB(255, 83, 82, 82),fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "BREADTH",
+              style: TextStyle(color: Color.fromARGB(255, 83, 82, 82),fontWeight: FontWeight.bold),
+            ),
+            
+          ],
+        ),
+        
+      ),
+      
+      ),
+      Container(
+        child: Padding(
+            padding:  EdgeInsets.only(left: 08, top: 06),
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+           Container(
+            width: MediaQuery.of(context).size.width*0.25,
+            height: 30,
+            
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(05),
+               color:Color.fromARGB(255, 222, 243, 253)
+            ),
+            child: Center(child: Text("43",style: TextStyle(),)),
+           ),
+            Container(
+            width: MediaQuery.of(context).size.width*0.22,
+            height: 30,
+            
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(05),
+               color:Color.fromARGB(255, 222, 243, 253)
+            ),
+            child: Center(child: Text("34",style: TextStyle(),)),
+           ),
+            Container(
+            width: MediaQuery.of(context).size.width*0.22,
+            height: 30,
+            
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(05),
+              color:Color.fromARGB(255, 222, 243, 253)
+            ),
+            child: Center(child: Text("70",style: TextStyle(),)),
+           ),
+            ],
+          ),
+        ),
+      )
+      ]
+    );
     
-  );
+  }
 }
-} 

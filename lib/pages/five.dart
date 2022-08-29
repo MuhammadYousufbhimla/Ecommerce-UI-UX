@@ -279,7 +279,7 @@ class _FiveState extends State<Five> with SingleTickerProviderStateMixin {
               padding: const EdgeInsets.only(left:8.0),
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.25,
-                    height: MediaQuery.of(context).size.height * 0.06,
+                    height: MediaQuery.of(context).size.height * 0.05,
                     decoration: BoxDecoration(
                       color: Color.fromARGB(255, 39, 0, 231),
                       borderRadius: BorderRadius.circular(08),
@@ -291,9 +291,10 @@ class _FiveState extends State<Five> with SingleTickerProviderStateMixin {
               padding: const EdgeInsets.only(left:8.0),
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.25,
-                    height: MediaQuery.of(context).size.height * 0.06,
+                    height: MediaQuery.of(context).size.height * 0.05,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 39, 0, 231),
+                      color: Colors.grey,
+                    //  color: Color.fromARGB(255, 39, 0, 231),
                       borderRadius: BorderRadius.circular(08),
                  ),
                  child: Center(child: Text("No",style: TextStyle(color: Colors.white,fontSize: 15),)),

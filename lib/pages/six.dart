@@ -130,14 +130,20 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                 'assets/first.jpg',
               )),
             )),
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
+        Center(
           child: Text(
               "AS SEEN IN REDBOOK! You'll be printed and ready in the Perfect In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  ",
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 12,
                 color: Colors.black,
               )),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/four.jpg"),
+            ),
+          ),
         ),
       ]),
     );

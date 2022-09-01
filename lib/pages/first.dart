@@ -2,6 +2,7 @@ import 'package:ecommerce/Auth/login.dart';
 import 'package:ecommerce/pages/five.dart';
 import 'package:ecommerce/pages/four.dart';
 import 'package:ecommerce/pages/second.dart';
+import 'package:ecommerce/pages/six.dart';
 import 'package:ecommerce/pages/third.dart';
 import 'package:flutter/material.dart';
 
@@ -83,12 +84,14 @@ class _FirstState extends State<First> {
            )
         ],
        ),
-          Five(),
+      Six(),
      Second(),
      third(),
      four(),
+   
     Login(),
 
+Five(),
       ]
       
      )

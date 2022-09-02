@@ -87,7 +87,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
             ],
           ),
         ),
-        Positioned(top: 650, child: Info())
+        // Positioned(top: 550, child: Text("data"))
       ]),
     );
   }

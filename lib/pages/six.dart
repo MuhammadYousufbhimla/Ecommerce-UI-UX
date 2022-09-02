@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class Six extends StatefulWidget {
@@ -185,9 +187,20 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                 textAlign: TextAlign.center,
               ),
             ),
+            Padding(
+                padding: EdgeInsets.only(
+                    left: MediaQuery.of(context).size.width * 0.10)),
+            Icon(
+              Icons.share,
+              color: Colors.grey,
+            ),
+            Text(
+              "12k",
+              style: TextStyle(color: Colors.grey, fontSize: 15),
+            )
           ],
         )
       ]),
     );
-  
-
+  }
+}

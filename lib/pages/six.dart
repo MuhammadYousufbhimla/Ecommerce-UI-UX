@@ -87,6 +87,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
             ],
           ),
         ),
+        Positioned(top: 650, child: Info())
       ]),
     );
   }
@@ -123,7 +124,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
               style: TextStyle(color: Colors.grey, letterSpacing: 2),
             ),
             trailing: Icon(
-              Icons.heart_broken,
+              Icons.favorite,
               color: Colors.blue,
             ),
             leading: ClipOval(

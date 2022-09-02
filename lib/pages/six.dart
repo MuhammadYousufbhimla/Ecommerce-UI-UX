@@ -93,13 +93,13 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
     return Container(
       margin: EdgeInsets.only(
         top: MediaQuery.of(context).size.height * 0.02,
-        bottom: MediaQuery.of(context).size.height * 0.20,
-        left: MediaQuery.of(context).size.height * 0.01,
-        right: MediaQuery.of(context).size.height * 0.01,
+        bottom: MediaQuery.of(context).size.height * 0.15,
+        left: MediaQuery.of(context).size.height * 0.02,
+        right: MediaQuery.of(context).size.height * 0.02,
       ),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -130,7 +130,8 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                 'assets/first.jpg',
               )),
             )),
-        Center(
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: Text(
               "AS SEEN IN REDBOOK! You'll be printed and ready in the Perfect In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.  ",
               style: TextStyle(
@@ -138,14 +139,55 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                 color: Colors.black,
               )),
         ),
+        Padding(
+            padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height * 0.02)),
         Container(
+          height: MediaQuery.of(context).size.height * 0.30,
           decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
             image: DecorationImage(
-              image: AssetImage("assets/four.jpg"),
+              image: AssetImage(
+                "assets/four.jpg",
+              ),
+              fit: BoxFit.fitWidth,
             ),
           ),
         ),
+        Padding(padding: EdgeInsets.only(top: 05)),
+        Row(
+          children: [
+            Padding(padding: EdgeInsets.only(right: 05)),
+            Container(
+              width: MediaQuery.of(context).size.width * 0.30,
+              height: MediaQuery.of(context).size.height * 0.03,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(05),
+                color: Color.fromARGB(255, 39, 0, 231),
+              ),
+              child: Text(
+                "#Summer",
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Padding(padding: EdgeInsets.only(right: 05)),
+            Container(
+              width: MediaQuery.of(context).size.width * 0.30,
+              height: MediaQuery.of(context).size.height * 0.03,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(05),
+                color: Color.fromARGB(255, 39, 0, 231),
+              ),
+              child: Text(
+                "#Winter",
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        )
       ]),
     );
-  }
-}
+  
+

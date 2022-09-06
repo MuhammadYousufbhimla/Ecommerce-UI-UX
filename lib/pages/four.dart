@@ -39,7 +39,7 @@ class _FirstState extends State<four> {
            Padding(
               padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.73,left: MediaQuery.of(context).size.width*0.07),
              child: Container(
-                     width: MediaQuery.of(context).size.width*0.90,
+                     width: MediaQuery.of(context).size.width*0.91,
                      height: MediaQuery.of(context).size.height*0.08,
                decoration: BoxDecoration(
                 

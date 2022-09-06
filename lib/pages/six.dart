@@ -78,17 +78,26 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                   indicatorSize: TabBarIndicatorSize.tab,
                 ),
               ),
-              Expanded(
+             
+                         Expanded(
                 child: TabBarView(
-                  children: [Info(), Info(), Info()],
+                  children: [
+                    Info(), Info(), Info()],
                   controller: _tabController,
                 ),
+                
               ),
+        
+     
             ],
           ),
         ),
+    
         // Positioned(top: 550, child: Text("data"))
-      ]),
+      ]
+      
+      ),
+      
     );
   }
 
@@ -200,8 +209,12 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
               style: TextStyle(color: Colors.grey, fontSize: 15),
             )
           ],
-        )
-      ]),
+        ),
+
+      ]
+      ),
+
     );
+
   }
 }

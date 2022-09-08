@@ -3,6 +3,7 @@ import 'package:ecommerce/pages/Seven.dart';
 import 'package:ecommerce/pages/eight.dart';
 import 'package:ecommerce/pages/five.dart';
 import 'package:ecommerce/pages/four.dart';
+import 'package:ecommerce/pages/nine.dart';
 import 'package:ecommerce/pages/second.dart';
 import 'package:ecommerce/pages/six.dart';
 import 'package:ecommerce/pages/third.dart';
@@ -123,6 +124,7 @@ class _FirstState extends State<First> {
           )
         ],
       ),
+      Nine(),
       Seven(),
       Eight(),
       Six(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class Nine extends StatefulWidget {
   const Nine({Key? key}) : super(key: key);
@@ -13,37 +14,43 @@ class _SevenState extends State<Nine> {
     return Scaffold(
         body: ListView(children: [
       Container(
-        margin: EdgeInsets.only(
-          top: MediaQuery.of(context).size.height * 0.02,
-          left: MediaQuery.of(context).size.height * 0.01,
-          right: MediaQuery.of(context).size.height * 0.01,
-        ),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(20),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
-              spreadRadius: 3,
-              blurRadius: 5,
-              offset: Offset(0, 3), // changes position of shadow
+          child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Lottie.asset('assets/lottieefiles/done1.json'),
+          Padding(
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.45),
+            child: Text(
+              "Payment Successsful",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
             ),
-          ],
-        ),
-        child: TextField(
-          autofocus: true,
-          style: TextStyle(fontSize: 15.0, color: Colors.black),
-          decoration: InputDecoration(
-            filled: false,
-            suffixIcon: Icon(Icons.search_rounded),
-            fillColor: Colors.black,
-            hintText: 'Search Cart',
-            contentPadding:
-                const EdgeInsets.only(left: 14.0, bottom: 12.0, top: 12.0),
-            border: InputBorder.none,
           ),
-        ),
-      ),
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: Text(
+              "Your order will be ready in 5 days,\nincluding shiping,more details and\n optionsfor tracking will be sent to\n your mail ",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: 1),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: Text(
+              "Thanks!!!",
+              style: TextStyle(
+                  letterSpacing: 2,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500),
+            ),
+          )
+        ],
+      )),
     ]));
   }
 }

@@ -1,4 +1,5 @@
 import 'package:ecommerce/Auth/login.dart';
+import 'package:ecommerce/pages/Seven.dart';
 import 'package:ecommerce/pages/five.dart';
 import 'package:ecommerce/pages/four.dart';
 import 'package:ecommerce/pages/second.dart';
@@ -84,6 +85,7 @@ class _FirstState extends State<First> {
            )
         ],
        ),
+       Seven(),
       Six(),
      Second(),
      third(),

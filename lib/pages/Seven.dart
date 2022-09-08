@@ -8,14 +8,18 @@ class Seven extends StatefulWidget {
 }
 
 class _SevenState extends State<Seven> {
+   final List<Map> myProducts =
+      List.generate(100000, (index) => {"id": index, "name": "Product $index"})
+          .toList();
   @override
+ 
   Widget build(BuildContext context) {
         return Scaffold(
            body: Stack(
             children: [
               Container(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 margin: EdgeInsets.only(
@@ -42,13 +46,36 @@ class _SevenState extends State<Seven> {
                     filled: false,
                     suffixIcon: Icon(Icons.search_rounded),
                     fillColor: Colors.black,
-                    hintText: 'Search Location',
+                    hintText: 'Search Product1',
                     contentPadding: const EdgeInsets.only(
                         left: 14.0, bottom: 12.0, top: 12.0),
                     border: InputBorder.none,
                   ),
                 ),
               ),
+            //  Padding(padding: EdgeInsets.all(10.0)),
+              Text("data"),
+              Container(
+                child: GridView.builder(gridDelegate:  const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 200,
+                childAspectRatio: 3 / 2,
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 20), 
+                
+                itemCount: myProducts.length,
+                itemBuilder: (BuildContext ctx,index){
+                  return Container(
+alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Text(myProducts[index]["name"]),
+              
+                  );
+                }
+                
+                ),
+              )
             ],
            ),
               )

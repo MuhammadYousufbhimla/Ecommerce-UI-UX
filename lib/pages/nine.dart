@@ -19,12 +19,12 @@ class _SevenState extends State<Nine> {
         children: [
           Padding(
             padding:
-                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.03),
-            child: Lottie.asset('assets/lottieefiles/done.json', height: 80),
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.0),
+            child: Lottie.asset('assets/lottieefiles/done.json', height: 250),
           ),
           Padding(
             padding:
-                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.45),
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.30),
             child: Text(
               "Payment Successsful",
               style: TextStyle(

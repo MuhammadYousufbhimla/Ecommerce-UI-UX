@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Five extends StatefulWidget {
@@ -180,140 +178,157 @@ class _FiveState extends State<Five> with SingleTickerProviderStateMixin {
   }
 
   Widget Mesurement() {
-    return ListView(
-      children: [
-
-      
-       Container(
-          child: Padding(
-        padding: const EdgeInsets.only(left: 20.0, top: 05),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Text(
-              "WAIST",
-              style: TextStyle(color: Color.fromARGB(255, 83, 82, 82),fontWeight: FontWeight.bold),
-            ),
-            Text(
-              "LENGTH",
-              style: TextStyle(color: Color.fromARGB(255, 83, 82, 82),fontWeight: FontWeight.bold),
-            ),
-            Text(
-              "BREADTH",
-              style: TextStyle(color: Color.fromARGB(255, 83, 82, 82),fontWeight: FontWeight.bold),
-            ),
-            
-          ],
-        ),
-        
-      ),
-      
-      ),
+    return ListView(children: [
       Container(
         child: Padding(
-            padding:  EdgeInsets.only(left: 08, top: 06),
+          padding: const EdgeInsets.only(left: 20.0, top: 05),
           child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-           Container(
-            width: MediaQuery.of(context).size.width*0.25,
-            height: 30,
-            
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(05),
-               color:Color.fromARGB(255, 222, 243, 253)
-            ),
-            child: Center(child: Text("43",style: TextStyle(),)),
-           ),
-            Container(
-            width: MediaQuery.of(context).size.width*0.22,
-            height: 30,
-            
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(05),
-               color:Color.fromARGB(255, 222, 243, 253)
-            ),
-            child: Center(child: Text("34",style: TextStyle(),)),
-           ),
-            Container(
-            width: MediaQuery.of(context).size.width*0.22,
-            height: 30,
-            
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(05),
-              color:Color.fromARGB(255, 222, 243, 253)
-            ),
-            child: Center(child: Text("70",style: TextStyle(),)),
-           ),
-         
+              Text(
+                "WAIST",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 83, 82, 82),
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                "LENGTH",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 83, 82, 82),
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                "BREADTH",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 83, 82, 82),
+                    fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),
       ),
-        Container(
-            child: Padding(
-                padding:  EdgeInsets.only(left: 08, top: 08),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text("Color:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17), ),
-                  CircleAvatar1(context,Colors.brown),
-                     CircleAvatar1(context,Colors.green),
-                        CircleAvatar1(context,Colors.yellow),
-                           CircleAvatar1(context,Colors.purple),
-                ],
+      Container(
+        child: Padding(
+          padding: EdgeInsets.only(left: 08, top: 06),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width * 0.25,
+                height: 30,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(05),
+                    color: Color.fromARGB(255, 222, 243, 253)),
+                child: Center(
+                    child: Text(
+                  "43",
+                  style: TextStyle(),
+                )),
               ),
-            ),
-           ),
-           Container(
-            child: Padding(
-            padding:  EdgeInsets.only(left: 08, top: 07),
-              child: Text("Do you want to use this material?",style: TextStyle( fontSize: 15, color: Colors.grey,fontWeight: FontWeight.bold),),
-            ),
-           ),
-           Container(
-            child: Row(
-              children: [
+              Container(
+                width: MediaQuery.of(context).size.width * 0.22,
+                height: 30,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(05),
+                    color: Color.fromARGB(255, 222, 243, 253)),
+                child: Center(
+                    child: Text(
+                  "34",
+                  style: TextStyle(),
+                )),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width * 0.22,
+                height: 30,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(05),
+                    color: Color.fromARGB(255, 222, 243, 253)),
+                child: Center(
+                    child: Text(
+                  "70",
+                  style: TextStyle(),
+                )),
+              ),
+            ],
+          ),
+        ),
+      ),
+      Container(
+        child: Padding(
+          padding: EdgeInsets.only(left: 08, top: 08),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text(
+                "Color:",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+              ),
+              CircleAvatar1(context, Colors.brown),
+              CircleAvatar1(context, Colors.green),
+              CircleAvatar1(context, Colors.yellow),
+              CircleAvatar1(context, Colors.purple),
+            ],
+          ),
+        ),
+      ),
+      Container(
+        child: Padding(
+          padding: EdgeInsets.only(left: 08, top: 07),
+          child: Text(
+            "Do you want to use this material?",
+            style: TextStyle(
+                fontSize: 15, color: Colors.grey, fontWeight: FontWeight.bold),
+          ),
+        ),
+      ),
+      Container(
+        child: Row(
+          children: [
             Padding(
-              padding: const EdgeInsets.only(left:8.0),
+              padding: const EdgeInsets.only(left: 8.0),
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.25,
-                    height: MediaQuery.of(context).size.height * 0.05,
-                    decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 39, 0, 231),
-                      borderRadius: BorderRadius.circular(08),
-                 ),
-                 child: Center(child: Text("Yes",style: TextStyle(color: Colors.white,fontSize: 15),)),
+                height: MediaQuery.of(context).size.height * 0.05,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 39, 0, 231),
+                  borderRadius: BorderRadius.circular(08),
+                ),
+                child: Center(
+                    child: Text(
+                  "Yes",
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                )),
               ),
             ),
-             Padding(
-              padding: const EdgeInsets.only(left:8.0),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.25,
-                    height: MediaQuery.of(context).size.height * 0.05,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                    //  color: Color.fromARGB(255, 39, 0, 231),
-                      borderRadius: BorderRadius.circular(08),
-                 ),
-                 child: Center(child: Text("No",style: TextStyle(color: Colors.white,fontSize: 15),)),
+                height: MediaQuery.of(context).size.height * 0.05,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  //  color: Color.fromARGB(255, 39, 0, 231),
+                  borderRadius: BorderRadius.circular(08),
+                ),
+                child: Center(
+                    child: Text(
+                  "No",
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                )),
               ),
             ),
-              ],
-            ),
-           )
-      ]
-    );
-    
+          ],
+        ),
+      )
+    ]);
   }
-  Widget CircleAvatar1(context,Color){
+
+  Widget CircleAvatar1(context, Color) {
     return Container(
-    child: CircleAvatar(
-      backgroundColor:Color,
+        child: CircleAvatar(
+      backgroundColor: Color,
       radius: 20,
-    )
-    
-    );
+    ));
   }
 }

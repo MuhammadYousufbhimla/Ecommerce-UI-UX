@@ -48,6 +48,39 @@ class _SevenState extends State<Nine> {
                   color: Colors.black,
                   fontWeight: FontWeight.w500),
             ),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width * 0.40,
+            // height: MediaQuery.of(context).size.height * 0.20,
+            margin: EdgeInsets.only(
+              left: MediaQuery.of(context).size.height * 0.02,
+              right: MediaQuery.of(context).size.height * 0.02,
+              top: MediaQuery.of(context).size.height * 0.02,
+              bottom: MediaQuery.of(context).size.height * 0.02,
+            ),
+            padding: EdgeInsets.only(
+              left: MediaQuery.of(context).size.height * 0.02,
+              right: MediaQuery.of(context).size.height * 0.02,
+              top: MediaQuery.of(context).size.height * 0.02,
+              bottom: MediaQuery.of(context).size.height * 0.02,
+            ),
+            decoration: BoxDecoration(
+                color: Color.fromARGB(255, 39, 0, 231),
+                borderRadius: BorderRadius.circular(8),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 2,
+                    blurRadius: 2,
+                    offset: Offset(0, 3),
+                  )
+                ]),
+            child: Text(
+              "Continue Shopping",
+              textAlign: TextAlign.center,
+              style:
+                  TextStyle(fontWeight: FontWeight.w500, color: Colors.white),
+            ),
           )
         ],
       )),

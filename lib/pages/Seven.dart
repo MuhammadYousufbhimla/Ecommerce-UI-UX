@@ -9,58 +9,60 @@ class Seven extends StatefulWidget {
 
 class _SevenState extends State<Seven> {
    final List<Map> myProducts =
-      List.generate(100000, (index) => {"id": index, "name": "Product $index"})
+      List.generate(06, (index) => {"id": index, "name": "Product $index"})
           .toList();
   @override
  
   Widget build(BuildContext context) {
         return Scaffold(
-           body: Stack(
-            children: [
-              Container(
-          child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.02,
-                  left: MediaQuery.of(context).size.height * 0.01,
-                  right: MediaQuery.of(context).size.height * 0.01,
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(18),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+           body:
+           
+       
+              ListView(
+                children: [
+
+                
+                 Container(
+                    
+                    
+                  margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.02,
+                    left: MediaQuery.of(context).size.height * 0.01,
+                    right: MediaQuery.of(context).size.height * 0.01,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(18),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                  child: TextField(
+                    autofocus: true,
+                    style: TextStyle(fontSize: 15.0, color: Colors.black),
+                    decoration: InputDecoration(
+                      filled: false,
+                      suffixIcon: Icon(Icons.search_rounded),
+                      fillColor: Colors.black,
+                      hintText: 'Search Product1',
+                      contentPadding: const EdgeInsets.only(
+                          left: 14.0, bottom: 12.0, top: 12.0),
+                      border: InputBorder.none,
                     ),
-                  ],
-                ),
-                child: TextField(
-                  autofocus: true,
-                  style: TextStyle(fontSize: 15.0, color: Colors.black),
-                  decoration: InputDecoration(
-                    filled: false,
-                    suffixIcon: Icon(Icons.search_rounded),
-                    fillColor: Colors.black,
-                    hintText: 'Search Product1',
-                    contentPadding: const EdgeInsets.only(
-                        left: 14.0, bottom: 12.0, top: 12.0),
-                    border: InputBorder.none,
                   ),
                 ),
-              ),
-            //  Padding(padding: EdgeInsets.all(10.0)),
-              Text("data"),
-              Container(
+                      Padding(padding: EdgeInsets.only(top:15.0)),
+                          Container(
                 child: GridView.builder(gridDelegate:  const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 200,
+                maxCrossAxisExtent: 05,
                 childAspectRatio: 3 / 2,
-                crossAxisSpacing: 20,
-                mainAxisSpacing: 20), 
+                crossAxisSpacing: 05,
+                mainAxisSpacing: 05), 
                 
                 itemCount: myProducts.length,
                 itemBuilder: (BuildContext ctx,index){
@@ -72,14 +74,23 @@ alignment: Alignment.center,
                 child: Text(myProducts[index]["name"]),
               
                   );
-                }
-                
-                ),
-              )
-            ],
-           ),
-              )
-           ])
+              
+                }              
+                )
+                          )
+  
+                ]    
+             ),
+        
+            
+            
+
+              
+              
+            
+          
+         
         );
+        
   }
 }

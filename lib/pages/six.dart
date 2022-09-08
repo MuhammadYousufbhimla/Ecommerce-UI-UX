@@ -107,7 +107,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
       margin: EdgeInsets.only(
         top: MediaQuery.of(context).size.height * 0.02,
         bottom: MediaQuery.of(context).size.height * 0.15,
-        left: MediaQuery.of(context).size.height * 0.01,
+        left: MediaQuery.of(context).size.height * 0.02,
         right: MediaQuery.of(context).size.height * 0.01,
       ),
       decoration: BoxDecoration(

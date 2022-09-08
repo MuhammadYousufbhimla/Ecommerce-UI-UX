@@ -107,9 +107,7 @@ class _SevenState extends State<Eight> {
           ]),
       child: ListTile(
         minLeadingWidth: 10,
-        leading: Image.asset(
-          leadImage,
-        ),
+        leading: Image.asset(leadImage),
         title: Text(
           "Hawaian Shirt",
           style: TextStyle(color: Colors.black, fontSize: 13),

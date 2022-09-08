@@ -13,6 +13,7 @@ class _SevenState extends State<Seven> {
     'assets/summer.png',
     'assets/Winter1.png',
     'assets/Summer1.png',
+    'assets/women.png',
   ];
   // final List<Map> myProducts =
   //     List.generate(06, (index) => {"id": index, "name": "Product $index"})

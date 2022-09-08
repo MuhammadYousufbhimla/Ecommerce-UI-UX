@@ -93,23 +93,22 @@ class _FirstState extends State<third> {
               top: MediaQuery.of(context).size.height * 0.85,
               left: MediaQuery.of(context).size.width * 0.10),
           child: Container(
-            width: MediaQuery.of(context).size.width * 0.85,
-            height: MediaQuery.of(context).size.height * 0.10,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                    width: MediaQuery.of(context).size.width * 0.01,
-                    color: Colors.white)),
-            child: Center(
-                child: Text(
-              "Shop Now",
-              style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.w500,
-                color: Colors.white,
-              ),
-            )),
-          ),
+              width: MediaQuery.of(context).size.width * 0.85,
+              height: MediaQuery.of(context).size.height * 0.10,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                      width: MediaQuery.of(context).size.width * 0.01,
+                      color: Colors.white)),
+              child: Center(
+                  child: Text(
+                "Shop Now",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                ),
+              ))),
         )
       ],
     ));

@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:ecommerce/pages/first.dart';
 
-
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
@@ -47,18 +46,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-      
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-          
             decoration: BoxDecoration(
               gradient: LinearGradient(colors: [
                 Colors.blue,
-                 Color.fromARGB(255, 8, 90, 157),
+                Color.fromARGB(255, 8, 90, 157),
               ]),
               // color: Color.fromRGBO(10, 83, 144, 1)
-              ),
+            ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -69,14 +66,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
- 
                       ClipOval(
-                        clipBehavior: Clip.hardEdge,
-                       child:Image.asset('assets/splash.png',width: MediaQuery.of(context).size.width*0.30,
-                       height: MediaQuery.of(context).size.height*0.20,
-                       )
-                        // child: Image.network('https://ae01.alicdn.com/kf/H756e861051b7417db7a5c6d37847aeben/Barber-Scissors-C1005-5-5-6-Engrave-Logo-Professional-Hairdressing-Scissors-Thinning-Shears-Hair-Cutting-Scissor.jpg_Q90.jpg_.webp',fit: BoxFit.fill,),
-                   ),
+                          clipBehavior: Clip.hardEdge,
+                          child: Image.asset(
+                            'assets/splash.png',
+                            width: MediaQuery.of(context).size.width * 0.30,
+                            height: MediaQuery.of(context).size.height * 0.20,
+                          )
+                          // child: Image.network('https://ae01.alicdn.com/kf/H756e861051b7417db7a5c6d37847aeben/Barber-Scissors-C1005-5-5-6-Engrave-Logo-Professional-Hairdressing-Scissors-Thinning-Shears-Hair-Cutting-Scissor.jpg_Q90.jpg_.webp',fit: BoxFit.fill,),
+                          ),
                       SizedBox(
                         height: 10,
                       ),
@@ -98,12 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-              
                     SizedBox(
                       height: 15.0,
                     ),
                     Text(
-                      
                       "Welcome to next page \n Best of Luck",
                       textAlign: TextAlign.center,
                       style: TextStyle(

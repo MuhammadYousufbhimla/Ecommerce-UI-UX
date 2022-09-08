@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class Six extends StatefulWidget {
@@ -78,32 +76,23 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                   indicatorSize: TabBarIndicatorSize.tab,
                 ),
               ),
-             
-                         Expanded(
+              Expanded(
                 child: TabBarView(
-                  children: [
-                    Info(), Info(), Info()],
+                  children: [Info(), Info(), Info()],
                   controller: _tabController,
                 ),
-
-                
               ),
-        
-     
             ],
           ),
         ),
-    
+
         // Positioned(top: 550, child: Text("data"))
-      ]
-      
-      ),
-      
+      ]),
     );
   }
 
   Widget Info() {
-      return Container(
+    return Container(
       margin: EdgeInsets.only(
         top: MediaQuery.of(context).size.height * 0.02,
         bottom: MediaQuery.of(context).size.height * 0.15,
@@ -211,11 +200,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
             )
           ],
         ),
-
-      ]
-      ),
-
+      ]),
     );
-
   }
 }

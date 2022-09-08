@@ -17,7 +17,7 @@ class _SevenState extends State<Nine> {
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Lottie.asset('assets/lottieefiles/done1.json'),
+          Lottie.asset('assets/lottieefiles/done1.json', height: 20),
           Padding(
             padding:
                 EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.45),

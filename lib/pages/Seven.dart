@@ -8,9 +8,15 @@ class Seven extends StatefulWidget {
 }
 
 class _SevenState extends State<Seven> {
-  final List<Map> myProducts =
-      List.generate(06, (index) => {"id": index, "name": "Product $index"})
-          .toList();
+  List ImageList = [
+    'assets/Winter.png',
+    'assets/summer.png',
+    'assets/Winter.png',
+    'assets/Winter.png',
+  ];
+  // final List<Map> myProducts =
+  //     List.generate(06, (index) => {"id": index, "name": "Product $index"})
+  //         .toList();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,32 +62,60 @@ class _SevenState extends State<Seven> {
                   crossAxisCount: 2,
                   mainAxisSpacing: 04,
                   crossAxisSpacing: 10,
-                  mainAxisExtent: 200,
+                  mainAxisExtent: 250,
                 ),
-                itemCount: myProducts.length,
+                itemCount: 4,
+                // itemCount: myProducts.length,
                 itemBuilder: (BuildContext ctx, index) {
                   return Column(
                     children: [
                       Container(
-                          height: MediaQuery.of(context).size.height * 0.20,
+                          height: MediaQuery.of(context).size.height * 0.32,
                           margin: EdgeInsets.only(
                               left: MediaQuery.of(context).size.height * 0.02,
                               right: MediaQuery.of(context).size.height * 0.02),
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
-                              color: Colors.grey,
-                              borderRadius: BorderRadius.circular(08)),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(08),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.5),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(0, 3),
+                                )
+                              ]),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset('assets/Winter.png'),
-                              // Text(myProducts[index]["name"]),
-                              Text(
-                                "Rs:25.99",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  color: Color.fromARGB(255, 39, 0, 231),
+                              Image.asset(
+                                ImageList[index],
+                                fit: BoxFit.fitHeight,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                    left: MediaQuery.of(context).size.width *
+                                        0.02),
+                                child: Text(
+                                  "Rs:25.99",
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 39, 0, 231),
+                                      fontWeight: FontWeight.w500),
                                 ),
-                              )
+                              ),
+                              Text('s')
+                              // Text(myProducts[index]["name"]),
+                              // Padding(
+                              //   padding: const EdgeInsets.only(top: 20.0),
+                              //   child: Text(
+                              //     "Rs:25.99",
+                              //     style: TextStyle(
+                              //       fontWeight: FontWeight.w500,
+                              //       color: Color.fromARGB(255, 39, 0, 231),
+                              //     ),
+                              //   ),
+                              // )
                             ],
                           )),
                     ],

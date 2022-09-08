@@ -11,8 +11,8 @@ class _SevenState extends State<Seven> {
   List ImageList = [
     'assets/Winter.png',
     'assets/summer.png',
-    'assets/Winter.png',
-    'assets/Winter.png',
+    'assets/Winter1.png',
+    'assets/Summer1.png',
   ];
   // final List<Map> myProducts =
   //     List.generate(06, (index) => {"id": index, "name": "Product $index"})
@@ -70,14 +70,14 @@ class _SevenState extends State<Seven> {
                   return Column(
                     children: [
                       Container(
-                          height: MediaQuery.of(context).size.height * 0.32,
+                          height: MediaQuery.of(context).size.height * 0.30,
                           margin: EdgeInsets.only(
                               left: MediaQuery.of(context).size.height * 0.02,
                               right: MediaQuery.of(context).size.height * 0.02),
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(08),
+                              borderRadius: BorderRadius.circular(10),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.5),
@@ -89,9 +89,11 @@ class _SevenState extends State<Seven> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                ImageList[index],
-                                fit: BoxFit.fitHeight,
+                              Center(
+                                child: Image.asset(
+                                  ImageList[index],
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                               Padding(
                                 padding: EdgeInsets.only(
@@ -104,7 +106,15 @@ class _SevenState extends State<Seven> {
                                       fontWeight: FontWeight.w500),
                                 ),
                               ),
-                              Text('s')
+                              Padding(
+                                padding: EdgeInsets.only(
+                                    left: MediaQuery.of(context).size.width *
+                                        0.02),
+                                child: Text(
+                                  'White Strap Pluge',
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              )
                               // Text(myProducts[index]["name"]),
                               // Padding(
                               //   padding: const EdgeInsets.only(top: 20.0),

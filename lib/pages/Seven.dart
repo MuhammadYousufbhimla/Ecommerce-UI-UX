@@ -58,18 +58,21 @@ class _SevenState extends State<Seven> {
                 ),
                       Padding(padding: EdgeInsets.only(top:15.0)),
                           Container(
-                child: GridView.builder(gridDelegate:  const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 05,
-                childAspectRatio: 3 / 2,
-                crossAxisSpacing: 05,
-                mainAxisSpacing: 05), 
+                            height:100
+                child: GridView.builder(
+                   physics: NeverScrollableScrollPhysics(),
+         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+               crossAxisCount: 2,
+                  mainAxisSpacing: 02,
+                  crossAxisSpacing: 10,
+                  mainAxisExtent: 100,
                 
                 itemCount: myProducts.length,
                 itemBuilder: (BuildContext ctx,index){
                   return Container(
-alignment: Alignment.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    color: Colors.amber,
+                color: Colors.amber,
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(myProducts[index]["name"]),
               

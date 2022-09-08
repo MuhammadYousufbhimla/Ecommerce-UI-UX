@@ -103,7 +103,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
   }
 
   Widget Info() {
-    return Container(
+      return Container(
       margin: EdgeInsets.only(
         top: MediaQuery.of(context).size.height * 0.02,
         bottom: MediaQuery.of(context).size.height * 0.15,

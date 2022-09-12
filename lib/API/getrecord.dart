@@ -23,13 +23,13 @@ getmembers() async {
       calldatascreen.add(servvices);
     }
 
-    print("List final is ${calldatascreen[1].title}");
+   // print("List final is ${calldatascreen[1].title}");
     // DialogHelper.hideLoading();
     // EasyLoading.dismiss();
 
     return calldatascreen;
   } catch (e) {
-    print("   error catch $e");
+    print("error catch $e");
   }
 }
 
@@ -39,5 +39,5 @@ class Calldata {
   String? body;
 
 
-  Calldata({this.id, this.title, this.body, });
+  Calldata({this.id, this.title, this.body });
 }

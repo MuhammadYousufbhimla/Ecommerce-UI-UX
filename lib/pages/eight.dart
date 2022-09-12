@@ -10,10 +10,10 @@ class Eight extends StatefulWidget {
 }
 
 class _SevenState extends State<Eight> {
-late Future _futuremember;
+  late Future _futuremember;
   TextEditingController title = TextEditingController();
   TextEditingController body = TextEditingController();
- 
+
   @override
   void initState() {
     super.initState();
@@ -47,83 +47,71 @@ late Future _futuremember;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('View Members'),
-        backgroundColor: Color.fromARGB(255, 82, 158, 89),
-      ),
-      resizeToAvoidBottomInset: false,
-      backgroundColor: Color.fromARGB(255, 122, 206, 122),
-      body: Container(
-        child: ListView(
-          children: [
-            FutureBuilder(
-                future: _futuremember,
-                builder: (context, AsyncSnapshot snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return Center(child: CircularProgressIndicator());
-                  } else if (snapshot.data == null) {
-                    print("object  :null data  ${snapshot.data}");
-                    return Column(
-                      children: [
-                        SizedBox(height: 20),
-                        Center(
-                            child: Text(
-                          "No Data",
-                          style: TextStyle(fontSize: 20, color: Colors.white),
-                        )),
-                      ],
-                    );
-                  } else {
-                    print("object  :has data  ${snapshot.data[0].relation}");
+        appBar: AppBar(
+          title: Text('View Members'),
+          backgroundColor: Color.fromARGB(255, 82, 158, 89),
+        ),
+        resizeToAvoidBottomInset: false,
+        backgroundColor: Color.fromARGB(255, 122, 206, 122),
+        body: Container(
+            child: ListView(children: [
+          FutureBuilder(
+              future: _futuremember,
+              builder: (context, AsyncSnapshot snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return Center(child: CircularProgressIndicator());
+                } else if (snapshot.data == null) {
+                  print("object  :null data  ${snapshot.data}");
+                  return Column(
+                    children: [
+                      SizedBox(height: 20),
+                      Center(
+                          child: Text(
+                        "No Data",
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      )),
+                    ],
+                  );
+                } else {
+                  print("object  :has data  ${snapshot.data[0].relation}");
 
-
-            return ListView.builder(
-                shrinkWrap: true,
-                        itemCount: snapshot.data.length,
-              itemBuilder: (BuildContext context, int index) {
-                   return Container(
-                    margin: EdgeInsets.only(top: 12, bottom: 12),
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(15),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.2),
-                                    spreadRadius: 5,
-                                    blurRadius: 7,
-                                    offset: Offset(
-                                        0, 3), // changes position of shadow
-                                  ),
-                                ],
-                              ),
-                              child: ListTile(
-                                 title: Text(
-                                      "${snapshot.data[index].title}",
-                                      style: TextStyle(
-                                          color: Colors.grey[800],
-                                          fontWeight: FontWeight.bold)),
-                                           subtitle:
-                                      Text("${snapshot.data[index].body}"),
-                                  trailing: Column(children: [
-                                    SizedBox(
-                                      height: 5,
-                                    ),
-           ] ),
-                              )
-
-                              );
-              }
-            );
-                  
-                  }
-  })
-       ] 
-       )
-      )
-    );
-
-                  }
+                  return ListView.builder(
+                      shrinkWrap: true,
+                      itemCount: snapshot.data.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return Container(
+                            margin: EdgeInsets.only(top: 12, bottom: 12),
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 3), // changes position of shadow
+                                ),
+                              ],
+                            ),
+                            child: ListTile(
+                              title: Text("${snapshot.data[index].title}",
+                                  style: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontWeight: FontWeight.bold)),
+                              subtitle: Text("${snapshot.data[index].title}"),
+                              trailing: Column(children: [
+                                SizedBox(
+                                  height: 5,
+                                ),
+                              ]),
+                            ));
+                      });
+                }
+              })
+        ])));
+  }
 }
 
 

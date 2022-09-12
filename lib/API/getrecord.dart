@@ -23,7 +23,7 @@ getmembers() async {
       calldatascreen.add(servvices);
     }
 
-    print("List final is ${calldatascreen[0].title}");
+    print("List final is ${calldatascreen[1].title}");
     // DialogHelper.hideLoading();
     // EasyLoading.dismiss();
 

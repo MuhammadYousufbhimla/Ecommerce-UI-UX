@@ -73,14 +73,14 @@ class _SevenState extends State<Eight> {
                     ],
                   );
                 } else {
-                  print("object  :has data  ${snapshot.data[0].relation}");
+                  print("object  :has data  ${snapshot.data[0].id}");
 
                   return ListView.builder(
                       shrinkWrap: true,
                       itemCount: snapshot.data.length,
                       itemBuilder: (BuildContext context, int index) {
                         return Container(
-                            margin: EdgeInsets.only(top: 12, bottom: 12),
+                            margin: EdgeInsets.only(top: 12, bottom: 12,left: 05,right: 05),
                             padding: EdgeInsets.all(5),
                             decoration: BoxDecoration(
                               color: Colors.white,
@@ -96,12 +96,16 @@ class _SevenState extends State<Eight> {
                               ],
                             ),
                             child: ListTile(
+                              leading: Icon(Icons.favorite,color:Colors.red),
                               title: Text("${snapshot.data[index].title}",
                                   style: TextStyle(
                                       color: Colors.grey[800],
                                       fontWeight: FontWeight.bold)),
-                              subtitle: Text("${snapshot.data[index].title}"),
+                              subtitle: Text("${snapshot.data[index].body}"),
                               trailing: Column(children: [
+
+                                Text("${snapshot.data[index].id}"),
+                             Text("${snapshot.data[index].userId}"),
                                 SizedBox(
                                   height: 5,
                                 ),

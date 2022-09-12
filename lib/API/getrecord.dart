@@ -15,6 +15,8 @@ getmembers() async {
     // print(" calldatascreen : $calldatascreen");
     for (var i = 0; i < jsonData.length; i++) {
       Calldata servvices = Calldata(
+        userId: jsonData[i]['userId'],
+        // id: jsonData[i]['id'].toString(),
         id: jsonData[i]['id'],
         title: jsonData[i]['title'],
         body: jsonData[i]['body'],
@@ -23,7 +25,7 @@ getmembers() async {
       calldatascreen.add(servvices);
     }
 
-   // print("List final is ${calldatascreen[1].title}");
+    print("List final your userId is ${calldatascreen[1].userId}");
     // DialogHelper.hideLoading();
     // EasyLoading.dismiss();
 
@@ -34,10 +36,11 @@ getmembers() async {
 }
 
 class Calldata {
-  String? id;
+  int? id;
+   int? userId;
   String? title;
   String? body;
 
 
-  Calldata({this.id, this.title, this.body });
+  Calldata({ this.userId,this.id, this.title, this.body });
 }

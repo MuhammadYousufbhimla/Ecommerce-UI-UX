@@ -69,7 +69,7 @@ class _SevenState extends State<Eight> {
           ],
         ),
         child: TextField(
-          autofocus: true,
+          //autofocus: true,
           style: TextStyle(fontSize: 15.0, color: Colors.black),
           decoration: InputDecoration(
             filled: false,

@@ -6,7 +6,7 @@ getmembers() async {
 
   try {
     final response = await http
-        .get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
+        .get(Uri.parse('https://demo.code7labs.com/api/moneytree-backend/bankdetails.php'));
     var jsonData = jsonDecode(response.body);
     print(" Json Data ${jsonData.length}");
     print(" vList final object${jsonData}");
@@ -15,17 +15,19 @@ getmembers() async {
     // print(" calldatascreen : $calldatascreen");
     for (var i = 0; i < jsonData.length; i++) {
       Calldata servvices = Calldata(
-        userId: jsonData[i]['userId'],
-        // id: jsonData[i]['id'].toString(),
+        // userId: jsonData[i]['userId'],
         id: jsonData[i]['id'],
-        title: jsonData[i]['title'],
-        body: jsonData[i]['body'],
+        bank_title: jsonData[i]['bank_title'],
+        acc_ttitle: jsonData[i]['acc_ttitle'],
+        acc_no: jsonData[i]['acc_no'],
+         acc_iban: jsonData[i]['acc_iban'],
+       
        
       );
       calldatascreen.add(servvices);
     }
 
-    print("List final your userId is ${calldatascreen[1].userId}");
+    print("List final your userId is ${calldatascreen[1].id}");
     // DialogHelper.hideLoading();
     // EasyLoading.dismiss();
 
@@ -36,11 +38,12 @@ getmembers() async {
 }
 
 class Calldata {
-  int? id;
-   int? userId;
-  String? title;
-  String? body;
+   String? id;
+ String?  bank_title;
+  String? acc_ttitle;
+  String? acc_no;
+  String? acc_iban;
 
 
-  Calldata({ this.userId,this.id, this.title, this.body });
+  Calldata({ this.id,this.bank_title, this.acc_ttitle, this.acc_no ,this.acc_iban});
 }

@@ -37,7 +37,7 @@ class _FirstState extends State<four> {
           //    child: Text("Tailored",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color: Colors.white,letterSpacing: 4)),
           //  ),
            Padding(
-              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.73,left: MediaQuery.of(context).size.width*0.07),
+              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.73,left: MediaQuery.of(context).size.width*0.05),
              child: Container(
                      width: MediaQuery.of(context).size.width*0.91,
                      height: MediaQuery.of(context).size.height*0.08,
@@ -54,7 +54,7 @@ class _FirstState extends State<four> {
              child: Row(
                mainAxisAlignment: MainAxisAlignment.spaceAround,
                children: [
-                  Image.asset('assets/insta.png',height: 40,color: Colors.white,),
+                  Image.asset('assets/insta.png',height: 40,color: Color.fromARGB(255, 209, 54, 244),),
                  Text("Continue with instagram",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,color: Colors.white,),),
                ],
              )),

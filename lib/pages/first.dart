@@ -124,16 +124,18 @@ class _FirstState extends State<First> {
           )
         ],
       ),
-          Eight(),
-      Nine(),
-      Seven(),
-      Eight(),
-      Six(),
-      Second(),
+        Second(),
       third(),
       four(),
       Login(),
       Five(),
+      Six(),    
+      Seven(),
+  
+          Eight(),
+      Nine(),
+  
+    
     ]));
   }
 }

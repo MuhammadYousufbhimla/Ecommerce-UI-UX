@@ -58,7 +58,7 @@ class _FirstState extends State<Login> {
             borderRadius: BorderRadius.circular(30),
             boxShadow: [
               BoxShadow(
-                color: Color.fromARGB(255, 95, 95, 95).withOpacity(0.2),
+                color: Color.fromARGB(255, 165, 163, 163).withOpacity(0.2),
 
                 spreadRadius: 6,
 
@@ -92,7 +92,7 @@ class _FirstState extends State<Login> {
                 ),
                 child: TextField(
                   textAlign: TextAlign.center,
-                  autofocus: true,
+                  autofocus: false,
                   style: TextStyle(fontSize: 15.0, color: Colors.black),
                   decoration: InputDecoration(
                     filled: false,
@@ -124,7 +124,7 @@ class _FirstState extends State<Login> {
                 child: TextField(
                   obscureText: true,
                   textAlign: TextAlign.center,
-                  autofocus: true,
+                  autofocus: false,
                   style: TextStyle(fontSize: 15.0, color: Colors.black),
                   decoration: InputDecoration(
                     filled: false,
@@ -136,7 +136,7 @@ class _FirstState extends State<Login> {
               ),
                Container(
                 width: MediaQuery.of(context).size.width*0.35,
-            padding: EdgeInsets.only(     left: MediaQuery.of(context).size.height * 0.02,
+            padding: EdgeInsets.only(left: MediaQuery.of(context).size.height * 0.02,
             top:      MediaQuery.of(context).size.height * 0.01,
                 bottom: MediaQuery.of(context).size.height * 0.01,
             
@@ -174,7 +174,7 @@ class _FirstState extends State<Login> {
                Center(child: Text("OR",style: TextStyle(fontSize: 18),)),
                 Container(
                 width: MediaQuery.of(context).size.width*0.60,
-            padding: EdgeInsets.only(     left: MediaQuery.of(context).size.height * 0.02,
+            padding: EdgeInsets.only(left: MediaQuery.of(context).size.height * 0.02,
             top:      MediaQuery.of(context).size.height * 0.01,
                 bottom: MediaQuery.of(context).size.height * 0.01,
             

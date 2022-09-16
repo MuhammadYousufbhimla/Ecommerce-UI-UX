@@ -64,7 +64,7 @@ class _FirstState extends State<third> {
               style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 4, 2, 115))),
+                  color: Color.fromARGB(255, 46, 44, 179))),
         ),
         Padding(
           padding: EdgeInsets.only(
@@ -91,7 +91,7 @@ class _FirstState extends State<third> {
         Padding(
           padding: EdgeInsets.only(
               top: MediaQuery.of(context).size.height * 0.85,
-              left: MediaQuery.of(context).size.width * 0.10),
+              left: MediaQuery.of(context).size.width * 0.08),
           child: Container(
               width: MediaQuery.of(context).size.width * 0.85,
               height: MediaQuery.of(context).size.height * 0.10,
@@ -104,7 +104,7 @@ class _FirstState extends State<third> {
                   child: Text(
                 "Shop Now",
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 35,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),

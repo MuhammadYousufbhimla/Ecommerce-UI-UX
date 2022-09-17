@@ -25,7 +25,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
             children: [
               Container(
                 margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.02,
+                  top: MediaQuery.of(context).size.height * 0.07,
                   left: MediaQuery.of(context).size.height * 0.01,
                   right: MediaQuery.of(context).size.height * 0.01,
                 ),
@@ -42,7 +42,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                   ],
                 ),
                 child: TextField(
-                  autofocus: true,
+                  autofocus: false,
                   style: TextStyle(fontSize: 15.0, color: Colors.black),
                   decoration: InputDecoration(
                     filled: false,
@@ -56,7 +56,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 60.0),
+                padding: EdgeInsets.only(top: 20.0),
                 child: TabBar(
                   unselectedLabelColor: Colors.black,
                   labelColor: Colors.grey,
@@ -145,7 +145,7 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
             padding: EdgeInsets.only(
                 top: MediaQuery.of(context).size.height * 0.02)),
         Container(
-          height: MediaQuery.of(context).size.height * 0.30,
+          height: MediaQuery.of(context).size.height * 0.28,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             image: DecorationImage(
@@ -161,30 +161,36 @@ class _SixState extends State<Six> with SingleTickerProviderStateMixin {
           children: [
             Padding(padding: EdgeInsets.only(right: 05)),
             Container(
-              width: MediaQuery.of(context).size.width * 0.30,
+              width: MediaQuery.of(context).size.width * 0.28,
               height: MediaQuery.of(context).size.height * 0.03,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(05),
                 color: Color.fromARGB(255, 39, 0, 231),
               ),
-              child: Text(
-                "#Summer",
-                style: TextStyle(color: Colors.white),
-                textAlign: TextAlign.center,
+              child: Padding(
+                  padding:  EdgeInsets.only(top:03.0),
+                child: Text(
+                  "#Summer",
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
             Padding(padding: EdgeInsets.only(right: 05)),
             Container(
-              width: MediaQuery.of(context).size.width * 0.30,
+              width: MediaQuery.of(context).size.width * 0.28,
               height: MediaQuery.of(context).size.height * 0.03,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(05),
                 color: Color.fromARGB(255, 39, 0, 231),
               ),
-              child: Text(
-                "#Winter",
-                style: TextStyle(color: Colors.white),
-                textAlign: TextAlign.center,
+              child: Padding(
+                padding:  EdgeInsets.only(top:03.0),
+                child: Text(
+                  "#Winter",
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
             Padding(

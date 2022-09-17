@@ -92,7 +92,13 @@ class _SevenState extends State<Seven> {
                           // alignment: Alignment.center,
                           decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(10),
+                           borderRadius: BorderRadius.only(
+            topRight: Radius.circular(40.0),
+            // bottomRight: Radius.circular(40.0),
+            // topLeft: Radius.circular(40.0),
+            // bottomLeft: Radius.circular(40.0)
+            ),
+                              // borderRadius: BorderRadius.circular(10),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(0.2),

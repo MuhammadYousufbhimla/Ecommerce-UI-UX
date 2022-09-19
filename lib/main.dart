@@ -25,14 +25,25 @@ class _MyAppState extends State<MyApp> {
         body: Center(
             child: AnimatedSplashScreen(
                 duration: 2500,
-                splashTransition: SplashTransition.slideTransition,
-                splashIconSize: 400,
+                backgroundColor: Color.fromARGB(255, 38, 129, 203),
+                splashTransition: SplashTransition.rotationTransition,
+                splashIconSize: 300,
                 splash: Container(
+               //   height: 50,
+                  width: 150,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                    image: AssetImage('assets/scissors.png'),
+                    image: AssetImage('assets/splash.png',
+                    ),
+                  )
+                  
+                  ),
+                  child:   Text(
+                      "Welcome to next page \n Best of Luck",
+               
+                    
                   )),
-                ),
+                
                 nextScreen: First()
                 // nextScreen: Home(),
                 )),

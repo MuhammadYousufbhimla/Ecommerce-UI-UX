@@ -38,11 +38,11 @@ class _MyAppState extends State<MyApp> {
                   )
                   
                   ),
-                  child:   Text(
-                      "Welcome to next page \n Best of Luck",
+                  // child:   Text(
+                  //     "Welcome to next page \n Best of Luck",
                
                     
-                  )
+                  // )
                   ),
                 
                 nextScreen: First()

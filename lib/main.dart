@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
-        // body: Property(),
+
         body: Center(
             child: AnimatedSplashScreen(
                 duration: 2500,
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
                 splashTransition: SplashTransition.rotationTransition,
                 splashIconSize: 300,
                 splash: Container(
-               //   height: 50,
+       
                   width: 150,
                   decoration: BoxDecoration(
                       image: DecorationImage(
@@ -42,7 +42,8 @@ class _MyAppState extends State<MyApp> {
                       "Welcome to next page \n Best of Luck",
                
                     
-                  )),
+                  )
+                  ),
                 
                 nextScreen: First()
                 // nextScreen: Home(),
